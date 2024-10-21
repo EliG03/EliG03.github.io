@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #4CAF50;
+    background-color: #254893;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -92,7 +92,7 @@ p {
 #projects .project a {
     display: inline-block;
     margin-top: 10px;
-    color: #4CAF50;
+    color: #5979d1;
     text-decoration: none;
     font-weight: bold;
 }
@@ -107,6 +107,7 @@ p {
     color: white;
     padding: 30px 0;
     text-align: center;
+    
 }
 
 #contact p {
@@ -114,9 +115,10 @@ p {
 }
 
 #contact a {
-    color: #4CAF50;
+    color: #4c8baf;
     text-decoration: none;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 #contact a:hover {
@@ -125,7 +127,7 @@ p {
 
 /* Footer Styles */
 footer {
-    background-color: #4CAF50;
+    background-color: #254893;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -134,4 +136,68 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Button Styles for Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center buttons */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: #45a049;
+}
+
+nav ul li button:focus {
+    outline: none;
+}
+
+/* Center the image and add some styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+/* Flexbox container for the About section */
+.about-section {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    margin: 20px;
+    border: 20px;
+    border-color: black;
+}
+
+/* Styling for the profile image */
+.profile-image {
+    width: 150px; /* Adjust the size of the image */
+    margin-right: 20px; /* Add space between the image and the text */
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to the image */
+}
+
+/* Styling for the about content */
+.about-content {
+    max-width: 600px; /* Limit the width of the text for better readability */
+    border: 20px;
+    border-color: black;
 }
