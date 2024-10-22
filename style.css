@@ -1,12 +1,13 @@
 /* styles.css */
 
 /* General Styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-}
+}   
 
 body {
     background-color: #f4f4f9;
@@ -87,6 +88,7 @@ p {
 
 #projects .project p {
     font-size: 1.1em;
+    text-align: left;
 }
 
 #projects .project a {
@@ -100,6 +102,42 @@ p {
 #projects .project a:hover {
     text-decoration: underline;
 }
+
+.project li {
+    text-align: left;
+}
+
+/* Experience Section Styles */
+.experience {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto; /* This centers the container */
+    max-width: 800px; /* Set a maximum width for the content */
+    text-align: left; /* If you want the text to align to the left */
+}
+
+.experience h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience ul li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Center the entire list */
+.experience ul {
+    text-align: left;
+}
+
 
 /* Contact Section Styles */
 #contact {
@@ -132,6 +170,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     font-size: 0.9em;
+    position: relative;
 }
 
 footer p {
@@ -178,26 +217,38 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
 }
 
-/* Flexbox container for the About section */
+
+/* About Section */
 .about-section {
     display: flex;
-    align-items: center; /* Aligns items vertically in the center */
-    margin: 20px;
-    border: 20px;
-    border-color: black;
+    justify-content: center;  /* Horizontally centers the content */
+    align-items: center;      /* Vertically centers the content */
+    padding: 50px;
+    min-height: calc(100vh - 160px); /* Ensures it takes up the remaining space after header and footer */
+    background-color: #fafafa;
+    width: 100%;
+    
 }
 
-/* Styling for the profile image */
-.profile-image {
-    width: 150px; /* Adjust the size of the image */
-    margin-right: 20px; /* Add space between the image and the text */
-    border-radius: 50%; /* Makes the image circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to the image */
+/* Image Styling */
+.about-section img {
+    margin-right: 30px;
+    border-radius: 50%;
+    max-width: 200px; /* Limits the size of the image */
 }
 
-/* Styling for the about content */
+/* About Content Styling */
 .about-content {
-    max-width: 600px; /* Limit the width of the text for better readability */
-    border: 20px;
-    border-color: black;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.about-content h2 {
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.about-content p {
+    font-size: 1.1em;
 }
